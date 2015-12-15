@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="nl.donkeyscripts.wouter.ikkanerooknietsaandoendatikzoben.TabB"
+    tools:showIn="@layout/activity_tab_b">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bla"
+        android:id="@+id/tabbA"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bla bla"
+        android:id="@+id/tabbB"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tabbA" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bla bla bla bla"
+        android:id="@+id/tabbC"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tabbB" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="10"
+        android:columnCount="2"
+        android:id="@+id/gridLayout4"
+        android:layout_below="@+id/tabbA"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:text="gewoon altijd"
+            android:id="@+id/gewoonAltijd"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="heb zon kut stem"
+            android:id="@+id/kutStem"
+            android:layout_row="0"
+            android:layout_column="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hij wil hier stoer doen"
+            android:id="@+id/hierStoerDoen"
+            android:layout_row="1"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="Ik ben serieus"
+            android:id="@+id/benSerieus"
+            android:layout_row="1"
+            android:layout_column="1" />
+
+        <Button
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:text="Ik krijg een melding"
+            android:id="@+id/krijgMelding"
+            android:layout_row="2"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="Ik snap het niet"
+            android:id="@+id/snapHetNiet"
+            android:layout_row="2"
+            android:layout_column="1" />
+
+        <Button
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:text="Nee ff serieus"
+            android:id="@+id/ffSerieus"
+            android:layout_row="3"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="Lusiter eens"
+            android:id="@+id/luisterEens"
+            android:layout_row="3"
+            android:layout_column="1" />
+
+        <Button
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:text="Nee ben er klaar mee"
+            android:id="@+id/klaarMee"
+            android:layout_row="4"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="opeens Hard"
+            android:id="@+id/opeensHard"
+            android:layout_row="4"
+            android:layout_column="1" />
+
+        <Button
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:text="Wat heb je?"
+            android:id="@+id/watHebJe"
+            android:layout_row="5"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="Wat is dit?"
+            android:id="@+id/watIdDit"
+            android:layout_row="5"
+            android:layout_column="1" />
+
+    </GridLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabbHome"
+        android:layout_alignBottom="@+id/tabbC"
+        android:layout_toEndOf="@+id/tabbC"
+        android:clickable="true"
+        android:background="@drawable/home"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>
